@@ -1,0 +1,76 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}/* Styling Below*/
+body {
+	background: lightgray;
+}
+header{
+	background: white;
+}
+#container {
+	display: grid;
+	grid-column: 2;
+	grid-column-gap: 1px;
+	margin-top: 15px;
+}
+/* Main video css
+*/
+.video {
+	background:white;
+	margin: 10px 10px 10px 100px;
+	width: 1280px;
+	grid-column:1;
+}
+/*	Up next css
+*/
+aside{
+	background:white;
+	margin: 10px 0px 0 0;
+	width: 500px;
+	grid-column:2;
+}
+.up-next-video{
+	display:grid;
+	grid-column: 2; 
+}
+.up-next-video img{
+	grid-column:1;
+}
+.video-data {
+	grid-column:2;
+	font-size: 90%;
+	margin: 0 0 0 10px;
+	padding:0;
+}
+.up-next {
+	display:grid;
+	grid-template-columns: 120px 258px 122px;
+	margin: 0 0 10px 0;
+}
+.up-next-p {
+	grid-column: 1;
+}
+.autoplay{
+	grid-column:3;
+}
+.up-next-title {
+	font-weight: bold;
+}
+
