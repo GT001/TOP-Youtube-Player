@@ -1,8 +1,8 @@
-#The Oding Project
-#Youtube Video Page Project
-#HTML/CSS
+###The Oding Project
+Youtube Video Page Project
+HTML/CSS
 
-##Introduction:
+Introduction:
 The goal here isn’t to produce an exact replica of the YouTube video page, but to focus on making the media elements show up. That means two things – embedding the YouTube video player into the page so it actually plays and showing little thumbnail images along the right side.
 
 How far you go from there in terms of styling is up to you – some of you will already be more comfortable with CSS than others, so knock yourself out.
