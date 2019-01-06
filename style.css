@@ -19,36 +19,82 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }/* Styling Below*/
 body {
-	background: lightgray;
+	background:white;
 }
 header{
 	background: white;
+	border-bottom: solid grey 1px;
+	
 }
 #container {
 	display: grid;
 	grid-column: 2;
-	grid-column-gap: 1px;
+	grid-column-gap: 0;
 	margin-top: 15px;
+	justify-self: left;
 }
-/* Main video css
-*/
+/* Main video css ----------------------------------------*/
 .video {
 	background:white;
-	margin: 10px 10px 10px 100px;
+	margin: 10px 10px 10px 80px;
 	width: 1280px;
 	grid-column:1;
+	justify-self: end;
 }
-/*	Up next css
-*/
+#social-data {
+	display:grid;
+	grid-template-columns: auto auto;
+	margin: 8px 0 0 0;
+}
+#views {
+	color: grey;
+	grid-column:1;	
+}
+#like-dislike {
+	grid-column:2;
+	justify-self: right;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	
+	justify-content: center;
+	vertical-align: middle;
+	border-bottom:  grey solid 2px ;
+	margin-bottom:0 5px 0 0;
+}
+#social {
+	display:grid;
+	grid-template-columns: auto auto auto auto auto auto auto;
+	justify-self: self-end;
+}
+#social p{
+	color:grey;
+	margin-top:5px;
+}
+#social img{
+	margin-bottom: 6px;
+	vertical-align: middle;
+}
+.social-button{
+	display:grid;
+	grid-template-columns: auto auto;
+	margin: 0 10px 0 10px;
+}
+#views {
+	margin: 0 0 5px 0;
+}
+/*	Up next css ------------------------------------------*/
+
 aside{
 	background:white;
 	margin: 10px 0px 0 0;
-	width: 500px;
+	width: 475px;
 	grid-column:2;
 }
 .up-next-video{
 	display:grid;
-	grid-column: 2; 
+	grid-column: 2;
+	justify-self: start;
+	margin-top:10px;
 }
 .up-next-video img{
 	grid-column:1;
@@ -61,11 +107,11 @@ aside{
 }
 .up-next {
 	display:grid;
-	grid-template-columns: 120px 258px 122px;
+	grid-template-columns: 25% 50% 25%;
 	margin: 0 0 10px 0;
 }
 .up-next-p {
-	grid-column: 1;
+	grid-column: 1;	
 }
 .autoplay{
 	grid-column:3;
@@ -73,4 +119,89 @@ aside{
 .up-next-title {
 	font-weight: bold;
 }
+.up-next-text {
+	color: grey;
+}
+ /*	Publisher ------------------------------------------*/
+#publisher-details {
+	display:grid;
+	grid-template-columns: 5% 80% 15%;
+	margin: 10px 0 0 0;
+}
+#publisher-details img{
+	justify-self: start;
+	border-radius: 25px;
+}
+#publisher-details input{
+	color:white;
+	background-color: red;
+	border:none;
+	text-align: center;
+	font-size: 95%;
+	font-weight: bold;
+	margin: 0 15px 0 0;
+	height:40px;
+}
+#publisher-name{
+	margin: 10px 0 0 0;
+	font-weight: bold;
+}
+#published-on {
+	color:grey;
+}
+#video-description {
+	margin:10px 0 0 65px;
+	width:700px;
+}
+#showmore {
+	margin: 10px 0 10px 60px;
+}
+/*	Comments ------------------------------------------*/
+#comment-header{
+	display:grid;
+	grid-template-columns: 10%  10% 80%;
+}
+#addComment img{
+	border-radius: 25px;
+}
+#addComment {
+	vertical-align: middle;
+}
+#commentBox {
+	width:1200px;
+	border:none;
+	border-bottom: solid grey 1px;
+	font-size: 110%
+}
+.comment {
+	display:grid;
+	grid-template-columns: 60px auto;
+}
+.like-dislike-comment {
+	justify-self: start;
+	display: grid;
+	grid-template-columns: 40px 40px 40px auto;
+	vertical-align: middle;
+	margin:10px 5px 0 0;
+}
+.like-dislike-comment p{
+	margin-bottom: 5px;
+	color:grey;
+}
+.comment img{
+	border-radius:25px;
+	margin-bottom:5px;
+}
+.comment p {
+	margin-top: 6px;
+	width: 250px;
 
+}
+.user {
+	font-weight: bold;
+}
+/*	Other ------------------------------------------*/
+hr{
+	margin:0;
+	
+}
