@@ -17,14 +17,35 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-}/* Styling Below*/
+}
+/* Styling Below*/
 body {
 	background:white;
 }
 header{
 	background: white;
 	border-bottom: solid grey 1px;
-	
+	display:grid;
+	grid-template-columns: 3% 3% 19% 50% 10% 10%;
+}
+#menu {
+
+}
+#youtube {
+	justify-self: left;
+}
+#searchbar {
+	justify-self: start;
+	width: 600px;
+	height: 25px;
+	margin: 10px 0 0 0;
+	padding:0;
+}
+#searchButton {
+	height: 30px;
+	padding:0;
+	width:60px;
+	margin: 10px 0 0 0;
 }
 #container {
 	display: grid;
